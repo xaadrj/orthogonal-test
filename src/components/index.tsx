@@ -45,12 +45,12 @@ const ClockConstainer: React.FC<ClockConstainerProps> = () => {
       default:
         console.log("default");
         SetClass("");
-        setPos(0);
+
     }
   };
   return (
-    <div className=" relative flex justify-center items-center px-4 gap-10 flex-col w-full">
-      <div className="flex justify-start items-start w-8/12 h-96">
+    <div className=" relative flex justify-center items-center px-4 gap-6 flex-col w-full">
+      <div className="flex justify-start items-start w-8/12 h-72">
         <div className={`ease-in-out  duration-500  transition-all  `}>
           <div
             className={` ${
