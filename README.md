@@ -1,8 +1,17 @@
-# Getting Started with Create React App
+# Detail
+
+This project is developed using Tailwind Css, TypeScript and i have also deployed it on the vercel [App Deployed Link](https://orthogonal-test.vercel.app/)
+
+### How to Run
+
+Go to the project directory and run `npm install` or `yarn` to install the node modules and run the project using `npm start`.
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 type MyFunctionProp = (Pos : number) => void;
 
+// To Define type
 interface ClockProps {
   Color: string;
   Position: MyFunctionProp
@@ -10,19 +11,22 @@ interface ClockProps {
 
 const Clock: React.FC<ClockProps> = ({Color, Position }) => {
   const [Pos, setPos] = useState(1);
+
+  // Setting values on click
   const HandlePositon = () => {
     setPos(Pos+1)
-    Pos === 3 && setPos(0);
+    Pos === 4 && setPos(0);
     Position(Pos);
   }
   return (
     <div onClick={HandlePositon} className="w-10 h-10">
+    {/* Clock SVG */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
-        className={`${Color === 'minus' ? 'stroke-gray-400 hover:stroke-gray-800 ' : 'stroke-gray-100 hover:stroke-gray-300'} ease-in-out delay-75 transition-all stroke-2 cursor-pointer`}
+        className={`${Color === 'minus' ? 'stroke-gray-400 hover:stroke-gray-800 ' : 'hover:stroke-gray-100 stroke-gray-300'} ease-in-out delay-75 transition-all stroke-2 cursor-pointer`}
       >
         <path
           stroke-linecap="round"
